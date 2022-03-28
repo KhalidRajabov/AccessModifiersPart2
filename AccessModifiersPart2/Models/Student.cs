@@ -33,10 +33,12 @@ namespace AccessModifiersPart2.Models
             } 
         }
 
-        public Student(string surname, int point, string name, int age):base(name, age)
+        public Student(string name, int age, string surname, int point):base(name, age)
         {
             Surname = surname;
             Point = point;
+            Name = name;
+            Age = age;
         }
 
         public void StdInfo()
