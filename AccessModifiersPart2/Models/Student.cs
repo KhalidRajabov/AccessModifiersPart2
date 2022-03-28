@@ -10,15 +10,33 @@ namespace AccessModifiersPart2.Models
     {
         private string _surname;
         private int _point;
-        public string Surname{ get; set; }
-        public int Point{ get; set; }
+        public string Surname
+        {
+            get
+            {
+                return _surname;
+            }
+            set 
+            { 
+                _surname = value;
+            } 
+        }
+        public int Point
+        { 
+            get 
+            {
+                return _point;
+            }
+            set
+            { 
+                _point = value;
+            } 
+        }
 
         public Student(string surname, int point, string name, int age):base(name, age)
         {
             Surname = surname;
             Point = point;
-            Name = name;
-            Age = age;
         }
 
         public void StdInfo()

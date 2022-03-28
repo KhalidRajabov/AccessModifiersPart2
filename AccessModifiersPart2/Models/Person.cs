@@ -18,7 +18,7 @@ namespace AccessModifiersPart2.Models
             }
             set
             {
-             
+             _name = value;
             }
         }
         public int Age{ 
@@ -31,14 +31,10 @@ namespace AccessModifiersPart2.Models
             _age = value;
             }
         }
-
         public Person(string name, int age)
         {
             Name = name;
             Age = age;
         }
-        
-
-
     }
 }

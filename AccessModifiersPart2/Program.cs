@@ -23,13 +23,14 @@ namespace AccessModifiersPart2
 
                 Student[i] = new Student(Name, Age, Surname, Point);
 
-                foreach (Student student in Student)
-                {
-                    student.StdInfo();
-                }
+             
             }
-            
-            
+            foreach (Student item in Student)
+            {
+                item.StdInfo();
+            }
+
+
         }
         static string GetInputStr(string name, int min, int max, int up)
         {
@@ -54,6 +55,7 @@ namespace AccessModifiersPart2
                 }
 
             } while ( input.Length < min || input.Length > max || up!=2);
+            
             return input;
         }
         static int GetInputCount(string name, int min, int max = int.MaxValue)
